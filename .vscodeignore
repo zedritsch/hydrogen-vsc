@@ -1,0 +1,8 @@
+# Directories
+.vscode
+
+# Files
+.gitignore
+
+# Filetypes
+*.vsix

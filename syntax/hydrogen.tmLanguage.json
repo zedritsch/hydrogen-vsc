@@ -1,0 +1,49 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Hydrogen",
+	"patterns": [
+		{ "include": "#storage.type" },
+		{ "include": "#keyword.operator.arithmetic" },
+		{ "include": "#keyword.operator.assignment" },
+		{ "include": "#punctuation.definition" },
+		{ "include": "#punctuation.separator" },
+		{ "include": "#constant.numeric" },
+		{ "include": "#entity.name.function" },
+		{ "include": "#variable" }
+	],
+	"repository": {
+		"storage.type": {
+			"name": "storage.type.hy",
+			"match": "\\blet\\b"
+		},
+		"keyword.operator.arithmetic": {
+			"name": "keyword.operator.arithmetic.hy",
+			"match": "[+\\-*/%]"
+		},
+		"keyword.operator.assignment": {
+			"name": "keyword.operator.assignment.hy",
+			"match": "="
+		},
+		"punctuation.definition": {
+			"name": "punctuation.definition.hy",
+			"match": "[\\(\\)]"
+		},
+		"punctuation.separator": {
+			"name": "punctuation.separator.hy",
+			"match": ";"
+		},
+		"constant.numeric": {
+			"name": "constant.numeric.hy",
+			"match": "\\b\\d+\\b"
+		},
+		"entity.name.function": {
+			"name": "entity.name.function.hy",
+			"match": "\\b[0-9A-Za-z_]+(?=\\s*\\()"
+		},
+		"variable": {
+			"name": "variable.hy",
+			"match": "\\b[0-9A-Za-z_]+\\b"
+		}
+	},
+	"scopeName": "source.hy"
+}

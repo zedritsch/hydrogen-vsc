@@ -1,0 +1,40 @@
+{
+	"name": "hydrogen-vsc",
+	"displayName": "Hydrogen for VS Code",
+	"description": "Hydrogen support for Visual Studio Code",
+	"publisher": "Zedritsch",
+	"license": "MIT",
+	"version": "0.5.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Zedritsch/hydrogen-vsc"
+	},
+	"engines": { "vscode": "^1.75.0" },
+	"categories": [ "Programming Languages" ],
+	"keywords": [
+		"Hydrogen",
+		"hydrogen",
+		"hy"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "hydrogen",
+				"aliases": [
+					"Hydrogen",
+					"hydrogen",
+					"hy"
+				],
+				"extensions": [ ".hy" ],
+				"configuration": "language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "hydrogen",
+				"scopeName": "source.hy",
+				"path": "syntax/hydrogen.tmLanguage.json"
+			}
+		]
+	}
+}

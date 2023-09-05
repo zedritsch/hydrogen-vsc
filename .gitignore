@@ -1,0 +1,9 @@
+# Directories
+.vscode/*
+
+# Files
+!.vscode/launch.json
+!.vscode/tasks.json
+
+# Filetypes
+*.vsix
