@@ -1,24 +1,27 @@
 {
 	"brackets": [
-		[ "(", ")" ]
+		[ "(", ")" ],
+		[ "{", "}" ]
 	],
 	"autoClosingPairs": [
-		[ "(", ")" ]
+		[ "(", ")" ],
+		[ "{", "}" ]
 	],
 	"surroundingPairs": [
-		[ "(", ")" ]
+		[ "(", ")" ],
+		[ "{", "}" ]
 	],
 	"autoCloseBefore": "; \t\n",
 	"folding": {
 		"offSide": true,
 		"markers": {
-			"start": "\\(",
-			"end": "\\)"
+			"start": "[\\(\\{]",
+			"end": "[\\)\\}]"
 		}
 	},
 	"wordPattern": "\\b[0-9A-Za-z_]+\\b",
 	"indentationRules": {
-		"increaseIndentPattern": "(?=\\().\\s*$",
-		"decreaseIndentPattern": "(?<!\\(.*)(?=\\)).\\s*$"
+		"increaseIndentPattern": "(?=[\\(\\{]).\\s*$",
+		"decreaseIndentPattern": "(?<![\\(\\{].*)(?=[\\)\\}]).\\s*$"
 	}
 }

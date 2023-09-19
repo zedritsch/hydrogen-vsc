@@ -3,6 +3,7 @@
 	"name": "Hydrogen",
 	"patterns": [
 		{ "include": "#storage.type" },
+		{ "include": "#keyword.control.conditional" },
 		{ "include": "#keyword.operator.arithmetic" },
 		{ "include": "#keyword.operator.assignment" },
 		{ "include": "#punctuation.definition" },
@@ -16,6 +17,10 @@
 			"name": "storage.type.hy",
 			"match": "\\blet\\b"
 		},
+		"keyword.control.conditional": {
+			"name": "keyword.control.conditional.cis",
+			"match": "\\bif\\b"
+		},
 		"keyword.operator.arithmetic": {
 			"name": "keyword.operator.arithmetic.hy",
 			"match": "[+\\-*/%]"
@@ -26,7 +31,7 @@
 		},
 		"punctuation.definition": {
 			"name": "punctuation.definition.hy",
-			"match": "[\\(\\)]"
+			"match": "[\\(\\)\\{\\}]"
 		},
 		"punctuation.separator": {
 			"name": "punctuation.separator.hy",
