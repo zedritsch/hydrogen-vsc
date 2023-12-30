@@ -1,53 +1,51 @@
 {
-	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
 	"name": "Hydrogen",
 	"patterns": [
-		{ "include": "#storage.type" },
-		{ "include": "#keyword.control.conditional" },
-		{ "include": "#keyword.operator.arithmetic" },
-		{ "include": "#keyword.operator.assignment" },
-		{ "include": "#punctuation.definition" },
-		{ "include": "#punctuation.separator" },
-		{ "include": "#constant.numeric" },
-		{ "include": "#entity.name.function" },
+		{ "include": "#punctuation" },
+		{ "include": "#comment" },
+		{ "include": "#keyword" },
+		{ "include": "#operator" },
+		{ "include": "#number" },
+		{ "include": "#function" },
 		{ "include": "#variable" }
 	],
 	"repository": {
-		"storage.type": {
-			"name": "storage.type.hy",
-			"match": "\\blet\\b"
+		"punctuation": {
+			"name": "punctuation.hy",
+			"match": "[();{}]"
 		},
-		"keyword.control.conditional": {
-			"name": "keyword.control.conditional.cis",
-			"match": "\\bif\\b"
+		"comment": {
+			"patterns": [
+				{
+					"name": "comment.hy",
+					"begin": "/\\*",
+					"end": "\\*/"
+				},
+				{
+					"name": "comment.hy",
+					"match": "//.*"
+				}
+			]
 		},
-		"keyword.operator.arithmetic": {
-			"name": "keyword.operator.arithmetic.hy",
-			"match": "[+\\-*/%]"
+		"keyword": {
+			"name": "keyword.hy",
+			"match": "\\b(?:elif|else|if|let)\\b"
 		},
-		"keyword.operator.assignment": {
-			"name": "keyword.operator.assignment.hy",
-			"match": "="
+		"operator": {
+			"name": "keyword.operator.hy",
+			"match": "[%*+\\-/=]"
 		},
-		"punctuation.definition": {
-			"name": "punctuation.definition.hy",
-			"match": "[\\(\\)\\{\\}]"
-		},
-		"punctuation.separator": {
-			"name": "punctuation.separator.hy",
-			"match": ";"
-		},
-		"constant.numeric": {
+		"number": {
 			"name": "constant.numeric.hy",
 			"match": "\\b\\d+\\b"
 		},
-		"entity.name.function": {
-			"name": "entity.name.function.hy",
-			"match": "\\b[0-9A-Za-z_]+(?=\\s*\\()"
+		"function": {
+			"name": "support.function.hy",
+			"match": "\\bexit\\b"
 		},
 		"variable": {
 			"name": "variable.hy",
-			"match": "\\b[0-9A-Za-z_]+\\b"
+			"match": "\\b[0-9A-Z_a-z]+\\b"
 		}
 	},
 	"scopeName": "source.hy"
