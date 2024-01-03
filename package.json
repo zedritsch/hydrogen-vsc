@@ -1,5 +1,5 @@
 {
-	"name": "hydrogen-vsc",
+	"name": "hydrogen",
 	"displayName": "Hydrogen for VS Code",
 	"description": "Hydrogen support for Visual Studio Code",
 	"publisher": "Zedritsch",
@@ -33,7 +33,7 @@
 			{
 				"language": "hydrogen",
 				"scopeName": "source.hy",
-				"path": "syntaxes/hydrogen.tmLanguage.json"
+				"path": "syntax/hydrogen.tmLanguage.json"
 			}
 		]
 	}
