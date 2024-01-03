@@ -17,6 +17,13 @@ vsce package
 ```
 
 ## Installation
+### Intellij
+Guide from the [PyCharm Documentation](https://www.jetbrains.com/help/pycharm/tutorial-using-textmate-bundles.html#importing-bundles)
+
+1. Go to the settings dialog (`CTRL`+`ALT`+`S`), and under `Editor` select `TextMate Bundles`
+2. Click the add button (`+`) and locate the **extracted** `.zip`-folder on your disk
+3. Then press `OK` to apply the changes
+
 ### From Editor
 Go to the extensions tab (`CTRL`+`SHIFT`+`X`), more options (`...`) and select `Install from VSIX...`
 

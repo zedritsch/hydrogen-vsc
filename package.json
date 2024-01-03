@@ -4,7 +4,7 @@
 	"description": "Hydrogen support for Visual Studio Code",
 	"publisher": "Zedritsch",
 	"license": "MIT",
-	"version": "0.7.0",
+	"version": "0.8.0",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/zedritsch/hydrogen-vsc"
@@ -33,7 +33,7 @@
 			{
 				"language": "hydrogen",
 				"scopeName": "source.hy",
-				"path": "syntax/hydrogen.tmLanguage.json"
+				"path": "syntaxes/hydrogen.tmLanguage.json"
 			}
 		]
 	}

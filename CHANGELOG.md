@@ -1,4 +1,8 @@
 # Changelog
+## v0.8.0
+### Additions
+* `TextMate` grammar (for `Intellij` support)
+
 ## v0.7.0
 ### Additions
 * `elif` and `else`
