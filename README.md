@@ -17,7 +17,7 @@ vsce package
 ```
 
 ## Installation
-### Intellij
+### JetBrains IDE
 Guide from the [PyCharm Documentation](https://www.jetbrains.com/help/pycharm/tutorial-using-textmate-bundles.html#importing-bundles)
 
 1. Go to the settings dialog (`CTRL`+`ALT`+`S`), and under `Editor` select `TextMate Bundles`
